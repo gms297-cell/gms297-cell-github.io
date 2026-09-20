@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Gianna's Website</title>
 
     <style>
         body {
@@ -11,45 +11,190 @@
             margin: 0;
             background-color: #f5f5f5;
             color: #333;
-            text-align: center;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 80px auto;
-            padding: 30px;
+            padding: 50px;
             background-color: white;
             border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        /* Left side */
+        .profile {
+            width: 250px;
+            text-align: center;
+            flex-shrink: 0;
         }
 
         .headshot {
-            width: 180px;
-            height: 180px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
         }
 
-        h1 {
+        .profile h1 {
             margin-top: 20px;
+            margin-bottom: 5px;
+            font-size: 32px;
         }
 
-        p {
+        .profile h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: normal;
+            color: #777;
+        }
+
+        /* Right side */
+        .about {
+            text-align: left;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .about p {
             font-size: 18px;
             line-height: 1.6;
+        }
+
+        /* Sections underneath */
+        .section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 40px 50px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                margin: 30px 15px;
+                padding: 30px;
+            }
+
+            .about {
+                text-align: center;
+            }
+
+            .section {
+                margin: 20px 15px;
+                padding: 30px;
+            }
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Introduction -->
     <div class="container">
-        <img src="IMG_1582.JPG" alt="My headshot" class="headshot">
 
-        <h1>Hi, I'm Gianna!</h1>
+        <div class="profile">
+            <img src="IMG_1582.JPG" alt="Gianna's headshot" class="headshot">
+
+            <h1>Gianna</h1>
+
+            <h3>Class of 2029</h3>
+        </div>
+
+        <div class="about">
+            <h2>Hi, I'm Gianna!</h2>
+
+            <p>
+                I am currently a full-time Accounting and Information Systems
+                and Supply Chain Management major set to graduate in May 2029.
+                I am a member of the Rutgers University Accounting Association
+                and the Future Business Leaders of America.
+            </p>
+
+            <p>
+                I am equipped with a vast toolset and understanding of
+                Microsoft Office, Google Suite, HTML, and multiple POS systems.
+                I aspire to work closely with my coworkers to create a positive
+                impact not only on the company, but on the world.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Education Section -->
+    <div class="section">
+
+        <h2>Education</h2>
 
         <p>
-            I am currently a full-time Accounting and Information Systems and Supply Chain Management major set to graduate in May 2029. I am a member of the Rutgers University Accounting Association and the Future Business Leaders of America. I am equipped with a vast toolset and understanding of Microsoft Office, Google Suite, HTML, and multiple POS systems. I aspire to work closely with my coworkers to create a positive impact not only on the company, but on the world. 
+            <strong>Rutgers University</strong><br>
+            Accounting and Information Systems & Supply Chain Management<br>
+            Class of 2029
         </p>
+
+    </div>
+
+
+    <!-- Experience Section -->
+    <div class="section">
+
+        <h2>Experience</h2>
+
+        <p>
+            I have gained experience in customer service, teamwork,
+            communication, and problem-solving through my previous work
+            experiences. These experiences have helped me develop skills
+            that I can bring into both academic and professional environments.
+        </p>
+
+    </div>
+
+
+    <!-- Skills Section -->
+    <div class="section">
+
+        <h2>Skills</h2>
+
+        <p>
+            Microsoft Office &nbsp; | &nbsp;
+            Google Suite &nbsp; | &nbsp;
+            HTML &nbsp; | &nbsp;
+            POS Systems &nbsp; | &nbsp;
+            Customer Service &nbsp; | &nbsp;
+            Communication
+        </p>
+
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="section">
+
+        <h2>Contact</h2>
+
+        <p>
+            I would love to connect and learn more about new opportunities!
+        </p>
+
     </div>
 
 </body>
